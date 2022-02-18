@@ -1,5 +1,5 @@
 type Query {
   hello: String!
   carList: [car!]!
-  carId(id: ID!): Result!
+  carId(codcoche: ID!): Result!
 }

@@ -6,8 +6,8 @@ import { Db } from 'mongodb';
 
 const querycarResolvers: IResolvers = {
     Query: {
-      carId: async(_: void, args: {id: string}, context: { db: Db }): Promise <IResult> => {
-          return await context.db.collection("car").findOne( {id: args.id} )
+      carId: async(_: void, args: {codcoche: string}, context: { db: Db }): Promise <IResult> => {
+          return await context.db.collection("car").findOne( {codcoche: args.codcoche} )
             .then( (carDocument) => {
               console.log(carDocument);
               return {

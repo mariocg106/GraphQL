@@ -11,6 +11,7 @@ class Database {
       console.log(MONGODB);
       const log = console.log;
       //conenctamos con el cliente de mongodb
+      
       const mongoClient = await MongoClient.connect(MONGODB);
       //inicializamos la bd
       this.db = mongoClient.db();
@@ -18,9 +19,7 @@ class Database {
       console.log(`DATABASE: ${chalk.greenBright(this.db.databaseName)}`);
       const lastId = await this.db.collection("users")
                 .find().limit(1).sort({registerDate: -1}).toArray();
-      //console.log(lastId);
-      //console.log (`STATUS: online` );
-      //console.log (`DATABASE: ${this.db.databaseName}` );
+
     } catch (error) {
         console.log(`error:${error}`);
         console.log(`STATUS: ${chalk.redBright("OFFLINE")}`);

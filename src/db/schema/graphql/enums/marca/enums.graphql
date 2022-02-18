@@ -1,4 +1,4 @@
-enum StatusEnum {
+enum StatusEnum{
   PUBLISH
   UNPUBLISH
 }

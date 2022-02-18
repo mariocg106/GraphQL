@@ -1,0 +1,3 @@
+type Mutation {
+  addmarca(marca: marcaInput!): Result!
+}

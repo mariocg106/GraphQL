@@ -1,14 +1,14 @@
 import { Db } from 'mongodb';
-import { Icar } from '../../../interfaces/Icar';
+import { Imarca } from '../../../interfaces/Imarca';
 import { IResult } from '../../../interfaces/IResult';
 import { IResolvers } from '@graphql-tools/utils';
 
 
-const mutationUpdatecarsResolvers: IResolvers = {
+const mutationUpdatemarcasResolvers: IResolvers = {
     Mutation: {
      
     }
 
 }
 
-export default mutationUpdatecarsResolvers;
+export default mutationUpdatemarcasResolvers;

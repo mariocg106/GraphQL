@@ -8,12 +8,12 @@ export interface Icar {
     codcoche: string;
     nombre: string;
     modelo: string;
-    precio: number;
+    Precio: number;
     Combustible: string;
     descripcion: string;
     Ano: string;
     Kilómetros: string;
     imagen: string;
-    status: enumStatus;
+    Status: enumStatus;
    
 }
