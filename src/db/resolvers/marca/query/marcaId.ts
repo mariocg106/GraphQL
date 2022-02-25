@@ -13,7 +13,7 @@ const querymarcaResolvers: IResolvers = {
               return {
                 status: true,
                 message: "marca encontrado",
-                data: marcaDocument as Imarca
+                datamar: marcaDocument as Imarca
               }
             })
             .catch( (error) => {

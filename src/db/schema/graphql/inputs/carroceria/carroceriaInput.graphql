@@ -1,0 +1,7 @@
+input carroceriaInput {
+  id: ID!
+  cifCA: String
+  tipoCARR: String
+
+  status: StatusEnum = UNPUBLISH
+}

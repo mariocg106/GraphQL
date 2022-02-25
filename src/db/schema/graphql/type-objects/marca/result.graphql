@@ -1,5 +1,5 @@
 type Result {
-  status: Boolean!
-  message: String!
-  dato: marca
+    status: Boolean!
+    message: String!
+    datamar: marca
 }

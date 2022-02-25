@@ -1,5 +1,5 @@
 type car {
-  id: ID!
+  id: ID
   codcoche: String
   nombre: String
   modelo: String
@@ -9,5 +9,7 @@ type car {
   Ano: String
   Kilometros: String
   imagen: String
+  cifCA: String
+  cifm: String
   Status: StatusEnum
 }

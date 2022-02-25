@@ -1,0 +1,7 @@
+type carroceria {
+  id: ID
+  cifCA: String
+  tipoCARR: String
+
+  status: StatusEnum
+}
