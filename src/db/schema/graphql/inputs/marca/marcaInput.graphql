@@ -1,5 +1,5 @@
 input marcaInput {
-  id: ID!
+  id: ID
   cifm: String
   nombre: String
 
