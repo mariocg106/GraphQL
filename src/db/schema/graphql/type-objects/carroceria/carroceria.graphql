@@ -1,5 +1,5 @@
 type carroceria {
-  id: ID!
+  id: ID
   cifCA: String
   tipoCARR: String
 

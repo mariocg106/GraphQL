@@ -13,7 +13,7 @@ const querycarroceriaResolvers: IResolvers = {
               return {
                 status: true,
                 message: "carroceria encontrado",
-                data: carroceriaDocument as Icarroceria
+                datacarr: carroceriaDocument as Icarroceria
               }
             })
             .catch( (error) => {

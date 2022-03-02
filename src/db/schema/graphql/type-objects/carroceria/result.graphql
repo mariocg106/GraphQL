@@ -1,5 +1,5 @@
 type Result {
-  status: Boolean!
-  message: String!
-  dataCARR: carroceria
+    status: Boolean!
+    message: String!
+    datacarr: carroceria
 }

@@ -3,5 +3,5 @@ input carroceriaInput {
   cifCA: String
   tipoCARR: String
 
-  status: StatusEnum = UNPUBLISH
+  status: StatusEnum
 }
