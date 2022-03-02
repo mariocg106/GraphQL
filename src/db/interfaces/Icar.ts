@@ -14,8 +14,8 @@ export interface Icar {
     Ano: string;
     Kilómetros: string;
     imagen: string;
-    //cifCA: string;
-    //cifm: string;
+    cifCA: string;
+    cifm: string;
     Status: enumStatus;
    
 }

@@ -7,6 +7,7 @@ export interface Imarca {
     _id?: any;
     cifm: string;
     nombre: string;
+    car: Array<string>;
     Status: enumStatus;
    
 }
