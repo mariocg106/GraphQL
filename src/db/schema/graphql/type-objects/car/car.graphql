@@ -9,7 +9,7 @@ type car {
   Ano: String
   Kilometros: String
   imagen: String
-  #cifCA: String
-  #cifm: String
+  cifCA: String
+  cifm: String
   Status: StatusEnum
 }

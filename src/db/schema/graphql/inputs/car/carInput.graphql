@@ -9,7 +9,7 @@ input carInput {
   Ano: String
   Kilometros: String
   imagen: String
-  #cifCA: String
-  #cifm: String
-  status: StatusEnum = UNPUBLISH
+  cifCA: String
+  cifm: String
+  status: StatusEnum 
 }
