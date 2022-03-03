@@ -1,3 +1,5 @@
 type Mutation {
   addcarroceria(carroceria: carroceriaInput!): Result!
+  deletecarroceria(cifCA: ID!): Result!
+  updatecarroceria(carroceria: carroceriaInput!, cifCA: ID!): Result!
 }

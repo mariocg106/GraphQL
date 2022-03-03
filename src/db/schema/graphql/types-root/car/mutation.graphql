@@ -1,3 +1,5 @@
 type Mutation {
   addcar(car: carInput!): Result!
+  deletecar(codcoche: ID!): Result!
+  updatecar(car: carInput!, codcoche: ID!): Result!
 }

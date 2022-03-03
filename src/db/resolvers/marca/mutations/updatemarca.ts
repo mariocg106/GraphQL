@@ -1,20 +1,20 @@
 import { IResult } from '../../../interfaces/IResult';
 import { IResolvers } from "@graphql-tools/utils";
-import { Icar } from '../../../interfaces/Icar';
+import { Imarca } from '../../../interfaces/Imarca';
 import { Db } from 'mongodb';
 
-const mutationAddcarResolvers: IResolvers = {
+const mutationUpdatemarcaResolvers: IResolvers = {
     Mutation: {
-        addcar: async(_: void, args: {car: Icar}, context: { db: Db }): Promise <IResult> => {
-            const dataResult = await context.db.collection("car").insertOne(args.car)
+        updatemarca: async(_: void, args: {cifm: string ,marca: Imarca}, context: { db: Db }): Promise <IResult> => {
+            const dataResult = await context.db.collection("marca").findOneAndUpdate( {cifm: args.cifm}, {$set: args.marca} )
                 .then( (data) => {
                     console.log(data);
                     return {
                         status: true,
-                        message: "car insertado con éxito",
-                        data: args.car
+                        message: "marca actualizada con éxito",
                     }
-                }).catch ( (error) => {
+                })
+                .catch ( (error) => {
                     return { 
                         status: false,
                         message: `Error: ${error}`
@@ -22,10 +22,10 @@ const mutationAddcarResolvers: IResolvers = {
                 })
             return dataResult;
         }
-        
+
     }
 
 
 }
 
-export default mutationAddcarResolvers;
+export default mutationUpdatemarcaResolvers;

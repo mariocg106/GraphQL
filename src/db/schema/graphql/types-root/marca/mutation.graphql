@@ -1,3 +1,5 @@
 type Mutation {
   addmarca(marca: marcaInput!): Result!
+  deletemarca(cifm: ID!): Result!
+  updatemarca(marca: marcaInput!, cifm: ID!): Result!
 }
