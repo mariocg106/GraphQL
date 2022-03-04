@@ -2,4 +2,5 @@ type Query {
   hello: String!
   marcaList: [marca!]!
   marcaId(cifm: ID!): Result!
+  
 }

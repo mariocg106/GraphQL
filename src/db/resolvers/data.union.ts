@@ -3,9 +3,9 @@ import { IResolvers } from "@graphql-tools/utils";
 
 const typesUnionResolvers: IResolvers = {
     car: { 
-    __resolveType(obj: { modelo: string; codcoche: string }) {
+    __resolveType(obj: { nombre: string; codcoche: string }) {
      
-      if (obj.modelo) {
+      if (obj.nombre) {
         return "marca";
       }
       

@@ -2,6 +2,6 @@ type marca {
   id: ID
   cifm: String
   nombre: String
-  car: [car]
+  carpormarca: [car]
   status: StatusEnum
 }
