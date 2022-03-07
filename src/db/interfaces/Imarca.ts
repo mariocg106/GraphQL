@@ -1,3 +1,4 @@
+import { Icar } from "./Icar";
 
 enum enumStatus {
     PUBLISH,
@@ -8,7 +9,7 @@ export interface Imarca {
     _id?: any;
     cifm: string;
     nombre: string;
-    car: Array<string>;
+    car: Array<Icar>;
     Status: enumStatus;
    
 }

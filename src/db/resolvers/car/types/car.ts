@@ -3,23 +3,35 @@ import { IResolvers } from "@graphql-tools/utils";
 
 const typescarResolvers: IResolvers = {
     car :{
-        nombre: (root: Icar) => {
-            return root.nombre === undefined;
+        nombre: (car: Icar) => {
+            return car.nombre;
         },
 
-        modelo: (root: { modelo: Icar }) => {
-            return root.modelo === undefined;
+        modelo: (car: { modelo: Icar }) => {
+            return car.modelo;
         },
-        Precio: (root: { Precio: Icar }) => {
-            return root.Precio === undefined
-        },
-
-        Kilometros: (root: { kilometros: Icar }) => {
-            return root.kilometros === undefined
+        precio: (car: { precio: Icar }) => {
+            return car.precio;
         },
 
-        Ano: (root: { Ano: Icar }) => {
-            return root.Ano === undefined
+        Kilometros: (car: { Kilometros: Icar }) => {
+            return car.Kilometros;
+        },
+
+        Ano: (car: { Ano: Icar }) => {
+            return car.Ano;
+        },
+        imagen: (car: { imagen: Icar }) => {
+            return car.imagen;
+        },
+        cifCA: (car: { cifCA: Icar }) => {
+            return car.cifCA;
+        },
+        cifm: (car: { cifm: Icar }) => {
+            return car.cifm;
+        },
+        marchas: (car: { marchas: Icar }) => {
+            return car.marchas;
         },
     }
     

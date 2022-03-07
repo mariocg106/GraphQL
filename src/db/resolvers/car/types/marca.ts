@@ -1,25 +1,25 @@
-import { Icar } from '../../../interfaces/Icar'; //people
+import { Icar } from '../../../interfaces/Icar';
 import { IResolvers } from "@graphql-tools/utils";
-import { Imarca } from '../../../interfaces/Imarca'; //book
+import { Imarca } from '../../../interfaces/Imarca';
 
 import { Db } from 'mongodb';
 
-const typecaarmarcaResolvers : IResolvers = {
+const typecarmarcaResolvers : IResolvers = {
     car: {
-        marcas: async(root:Imarca, __ , context: {db:Db} ): Promise<Icar[]> => {
-            let marcas: Icar[]=[];
+        cifm: async(root:Icar, __ , context: {db:Db} ): Promise<Imarca[]> => {
+            let marca: Imarca[]=[];
 
-            for (let idmarca of root.car){
-                let dbmarca = await context.db.collection("marca").findOne({id: idmarca })
+            for (let idmarca of root.cifm){
+                let dbmarca = await context.db.collection("marcas").findOne({id: idmarca })
                     .then (data => {
                         return data as Imarca;
                     })
-                marcas.push(dbmarca as unknown as Icar);
+                marca.push(dbmarca as Imarca);
             }
 
-            return marcas;
+            return marca;
         }
     }
 }
 
-export default typecaarmarcaResolvers ;
+export default typecarmarcaResolvers ;
