@@ -16,7 +16,6 @@ export interface Icar {
     imagen: string;
     cifCA: string;
     cifm: string;
-    marca: Array<string>;
     Status: enumStatus;
    
 }
