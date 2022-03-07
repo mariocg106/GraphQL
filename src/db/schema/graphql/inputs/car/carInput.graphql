@@ -11,5 +11,6 @@ input carInput {
   imagen: String
   cifCA: String
   cifm: String
+  marchas: String
   status: StatusEnum 
 }
