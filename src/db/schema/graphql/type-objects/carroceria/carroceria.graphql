@@ -2,6 +2,6 @@ type carroceria {
   id: ID
   cifCA: String
   tipoCARR: String
-
+  carporcarroceria: [car]
   status: StatusEnum
 }
