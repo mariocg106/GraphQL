@@ -5,4 +5,4 @@ import schema from "./db/schema";
 const graphQLServer = new GraphQLServer(schema);
 
 graphQLServer.listen((port: number) => 
-    console.log(`http://5.189.154.107:${port}/`));
+    console.log(`http://localhost:${port}/`));

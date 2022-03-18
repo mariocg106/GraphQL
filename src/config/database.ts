@@ -1,5 +1,5 @@
 import { Db, MongoClient } from "mongodb";
-import chalk, { Chalk } from 'chalk';
+import chalk from 'chalk';
 class Database {
   db?: Db;
   
@@ -9,7 +9,7 @@ class Database {
       //Definimos url
       const MONGODB = `${ process.env.DATABASE }` ;
       console.log(MONGODB);
-      const log = console.log;
+      
       //conenctamos con el cliente de mongodb
       
       const mongoClient = await MongoClient.connect(MONGODB);
