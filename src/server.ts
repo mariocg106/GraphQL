@@ -14,7 +14,7 @@ class GraphQLServer {
     //propiedades
     private app!: Application;
     private httpServer!: Server;
-    private readonly DEFAULT_PORT = (process.env.PORT) ? +process.env.PORT : 3025;
+    private readonly DEFAULT_PORT = (process.env.PORT) ? +process.env.PORT : 3030;
     private schema!: GraphQLSchema;
 
     constructor( schema: GraphQLSchema){
