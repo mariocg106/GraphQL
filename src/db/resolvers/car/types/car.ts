@@ -21,18 +21,6 @@ const typescarResolvers: IResolvers = {
         Ano: (car: { Ano: Icar }) => {
             return car.Ano;
         },
-        imagen: (car: { imagen: Icar }) => {
-            return car.imagen;
-        },
-        cifCA: (car: { cifCA: Icar }) => {
-            return car.cifCA;
-        },
-        cifm: (car: { cifm: Icar }) => {
-            return car.cifm;
-        },
-        marchas: (car: { marchas: Icar }) => {
-            return car.marchas;
-        },
     }
     
 }

@@ -3,11 +3,11 @@ type car {
   codcoche: String
   nombre: String
   modelo: String
-  precio: String
+  precio: Int
   Combustible: String
   descripcion: String
   Ano: String
-  Kilometros: String
+  Kilometros: String 
   imagen: String
   cifCA: String
   cifm: String

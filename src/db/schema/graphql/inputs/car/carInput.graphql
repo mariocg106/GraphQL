@@ -3,7 +3,7 @@ input carInput {
   codcoche: String
   nombre: String
   modelo: String
-  Precio: String
+  precio: String
   Combustible: String
   descripcion: String
   Ano: String
@@ -12,5 +12,5 @@ input carInput {
   cifCA: String
   cifm: String
   marchas: String
-  status: StatusEnum
+  status: StatusEnum 
 }
